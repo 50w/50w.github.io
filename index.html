@@ -11,11 +11,12 @@
         <p class="marquee">
             <span>WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW&nbsp;</span>
         </p>
-        <h1>50w.</h1>
+        <h1>50w</h1>
         <p><a href="https://samwheating.com">Sam</a>, <a href="https://imnick.dev">Nick</a> and <a href="https://mats.page">Mat</a><p>
-        <p>Check us out on <a href='http://github.com/50w'>github</a>
+        <p><a href='http://github.com/50w'>github</a>
+        <p><a href="projects.html">other projects</a></p>
         <p class="footer">made with ♥️ in 🇨🇦.</p>
-        <p class="marquee">
+        <p class="marquee-2">
           <span>WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW&nbsp;</span>
         </p>
     </body>
@@ -27,7 +28,9 @@ body {
 }
 
 p {
-    font-size: 5vh;
+    font-size: 4vh;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
     font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
 }
 
@@ -40,6 +43,7 @@ h1 {
     text-align: center;
     font-size: 15vh;
     font-family: "Comic Sans MS", cursive, sans-serif;   
+    margin-top: 5vh
 }
 
 .footer {
@@ -56,18 +60,42 @@ h1 {
   overflow: hidden;
 }
 
+.marquee-2 {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  bottom: 5vh;
+}
+
 .marquee span {
   display: inline-block;
   padding-left: 0vw;
   animation: marquee 600s linear infinite;
 }
 
+.marquee-2 span {
+  display: inline-block;
+  padding-left: 0vw;
+  animation: marquee-2 600s linear infinite;
+}
+
+
 @keyframes marquee {
   0% {
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-100%, 0);
+    transform: translate(-90%, 0);
+  }
+}
+
+@keyframes marquee-2 {
+  0% {
+    transform: translate(-90%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 
