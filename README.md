@@ -1,2 +1,3 @@
-# home
-Landing page for wwwwwwwwww
+No web frameworks allowed.
+
+add your projects to projects.html
