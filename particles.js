@@ -11,7 +11,7 @@ particlesJS("particles-js", {
       polygon: { nb_sides: 5 },
       image: {
         src:
-          "favicon.ico",
+          "w.png",
         width: 1000,
         height: 1000
       }
