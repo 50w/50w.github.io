@@ -1,16 +1,16 @@
 <!-- particles.js container -->
 <div id="particles-js"></div>
-
 <!-- stats - count particles -->
 
 <!DOCTYPE html>
 <html lang="en">
   <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<!-- stats.js lib -->
-<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-<script src="particles.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- stats.js lib -->
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script src="particles.js"></script>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -35,26 +35,31 @@
     </body>
 </html>
 <style>
-  body {
-    text-align: center;
-  }
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+  font-family: "Comic Sans MS", "Comic Sans", 'Chalkboard SE', 'Patrick Hand', sans-serif;
+  text-align: center;
+}
 
 p {
     font-size: 4vh;
     margin-top: 3vh;
     margin-bottom: 2vh;
-    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
   }
 
   span {
     font-size: 10vh;
-    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
   }
 
   h1 {
     text-align: center;
     font-size: 15vh;
-    font-family: "Comic Sans MS", cursive, sans-serif;
     margin-top: 5vh
 }
 
@@ -116,7 +121,6 @@ p {
   /* ---- Particle JS ---- */
   body {
     margin: 0;
-    font: normal 75% Arial, Helvetica, sans-serif;
   }
   canvas {
     display: block;
@@ -146,8 +150,6 @@ p {
     text-indent: 4px;
     line-height: 14px;
     padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
   }
   .js-count-particles {
     font-size: 1.1em;
